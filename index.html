@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My project</title>
-    <link rel="stylesheet" href="assets/materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    
-    <h1>Hello World!</h1>
 
-    <script src="assets/materialize/js/materialize.min.js"></script>
-    <script src="assets/js/main.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My project</title>
+  <link rel="stylesheet" href="assets/materialize/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/util.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ------ navbar section ------start ------------------>
+  <nav class="white z-depth-0 top_navbar">
+    <div class="nav-wrapper">
+      <a href="#!" class="blue-text hide-on-med-and-up">Home</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger blue-text"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="/" class="blue-text">Home</a></li>
+        <li><a href="/users.html" class="blue-text">User Management</a></li>
+        <li><a href="https://w3schools.com/css" class="blue-text">Css</a></li>
+        <li><a href="https://react.dev" class="blue-text">React</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="/assets/images/background.jpg" class="sizefull">
+        </div>
+        <a href="#user"><img class="circle" src="/assets/images/avatar.png"></a>
+        <a href="#name"><span class="white-text name">Sajjad</span></a>
+        <a href="#email"><span class="white-text email">sajjad@gmail.com</span></a>
+      </div>
+    </li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="subheader">Pages:</a></li>
+    <li><a class="waves-effect" href="/">Home</a></li>
+    <li><a class="waves-effect" href="/users.html">Users</a></li>
+  </ul>
+  <!-- ------------navbar section ---------- end --->
+
+
+  <!-- ----------- home section -------start ------------- -->
+  <section class="flex-col-c p-t-50">
+    <img src="/assets/images/react-logo.png" class="w-full max-w-200 filter_shadow">
+    <a href="" class="waves-effect waves-light btn blue darken-3 w-full max-w-200 m-t-20 m-b-10 rounded_pill">React
+      Tutorial</a>
+    <a href="/users.html" class="waves-effect waves-light btn blue darken-3 w-full max-w-200 m-b-10 rounded_pill">Users Manager</a>
+  </section>
+  <!-- ----------home section -----------end --------- -->
+
+  <script src="assets/materialize/js/materialize.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>
